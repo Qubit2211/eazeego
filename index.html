@@ -28,54 +28,86 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-
 </head>
-
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center  header-transparent ">
-    <div class="container d-flex align-items-center justify-content-between">
+<!-- ======= Header Section ======= -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand" id="navbar-brand" href="#">EazeeGo</a>
 
-      <div class="logo">
-        <h1><a href="index.html">EazeeGo</a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-      </div>
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About Us</a></li>
-          <li><a class="nav-link scrollto" href="#services">Offerings</a></li>
-          <!-- <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li> -->
-          <!-- <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li> -->
-          <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
-          <li><a class="nav-link scrollto" href="#contact">Reach Us</a></li>
-          <li class="dropdown"><a href="https://www.eazeego.store"><span>EazeeGo Live Store</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <!-- <li><a href="https://www.eazeego.store">EazeeGo Live Store<i class="bi bi-arrow-right"></i></a></li> -->
-              <!-- <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a> -->
-                <!-- <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul> -->
-              </li>
-              <!-- <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li> -->
-            </ul>
-          </li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#hero">Home</a>
+        <!-- <li><a class="nav-link scrollto active" href="#hero">Home</a></li> -->
 
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#services">Offerings</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#contact">Reach Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" id="Live_Store"  href="#https://www.eazeego.store">EazeeGo Live Store</span> <i class="bi bi-arrow-right"></i></a>
+        </li>
+      </ul>
     </div>
-  </header><!-- End Header -->
+  </div>
+</nav>
+<style>
+  #navbar {
+  width: 100%;
+  z-index: 997;
+  transition: all 0.5s;
+  position: fixed; /* Stick the header to the top */
+  top: 0; /* Position it at the top of the viewport */
+}
+  #navbar{
+    background-color: #224794 !important;
+    font-size: larger;
+  }
+  #navbar-brand{
+    font-family: "Open Sans", sans-serif;
+    font-size: xx-large;
+    font-weight: 700;
+  }
+ 
+  .navbar-nav .nav-link {
+  position: relative;
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ff204e; /* Initial underline color */
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+
+}
+
+</style>
+
+<!-- ======= end of Header Section ======= -->
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-end align-items-center">
@@ -84,32 +116,24 @@
       <!-- Slide 1 -->
 
        <div class="carousel-item active"> 
-
        <div class="carousel-container"> 
-      <!-- <img src="./97c710b1b8b764df.webp" alt="" >  -->
-
-          <h2 class="animate__animated animate__fadeInDown">Welcome to <span>EazeeGo</span></h2>
-          <p class="animate__animated fanimate__adeInUp">India’s First plug-and-play eCommerce platform tailored specifically for the Fast Moving Electrical Goods (FMEG) industry.</p>
-          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+        <img src="./BANNER1.jpg" alt="" > 
+          <!-- <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a> -->
         </div>
       </div> 
 
       <!-- Slide 2 -->
       <div class="carousel-item">
         <div class="carousel-container">
-          <!-- <img src="./blu banner.png" alt="" >  -->
-          <h2 class="animate__animated animate__fadeInDown">India's First game-changing e-Comm revolution</h2>
-          <p class="animate__animated animate__fadeInUp"> Making online selling as eazee as Plug, Play, and Profit!</p>
-          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+          <img src="./BANNER2.jpg" alt="" >
+          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a> 
         </div>
       </div>
 
       <!-- Slide 3 -->
       <div class="carousel-item">
         <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">Ready, set, launch! Your e-commerce in just 48 hours!</h2>
-          <!-- <p class="animate__animated animate__fadeInUp"></p> -->
-          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+          <img src="./BANNER3.jpg" alt="" > 
         </div>
       </div>
 
@@ -138,7 +162,9 @@
       </g>
     </svg>
 
-  </section><!-- End Hero -->
+  </section>
+  
+  <!-- End Hero -->
 
   <!-- <main id="main"> -->
 
@@ -148,13 +174,13 @@
 
         <div class="section-title" data-aos="zoom-out">
           <h2>About</h2>
-          <p>Who we are?</p>
+          <p>Who are we?</p>
         </div>
 
         <div class="row content" data-aos="fade-up">
           <div class="col-lg-6">
             <p>
-              India’s pioneering plug-and-play eCommerce platform tailored specifically for the Fast Moving Electrical Goods (FMEG) industry.We enable traditional electrical business to launch their e comm store in just 48 hours.
+              India’s pioneering plug-and-play e-Commerce platform tailored specifically for the Fast Moving Electrical Goods (FMEG) industry. We enable traditional electrical business to launch their e-comm store in just 48 hours.
               This will help the enterprise to grow their business exponential with following benifits.
             </p>
             <ul>
@@ -168,7 +194,7 @@
             <p>
               Our mission is to make business operations effortless and enable sustainable growth for our partners. With our user-friendly platform and comprehensive suite of services, we strive to redefine the paradigm of business operations, fostering ease of business and unlocking new avenues for expansion. Join us in transcending geographical boundaries and realizing higher returns on investment as we embark on this journey of innovation and growth together. Welcome to EazeeGo, where business meets ease.
             </p>
-            <img src="./campare.jpg" alt="" width="600px" height="300px"> 
+            <img src="./BANNER4.jpg" alt="" width="600px" height="300px"> 
             <!-- class="img-fluid" -->
             <!-- <a href="#" class="btn-learn-more">Learn More</a> -->
           </div>
