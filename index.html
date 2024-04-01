@@ -61,7 +61,7 @@
           <a class="nav-link scrollto" href="#contact">Reach Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link scrollto" id="Live_Store"  href="#https://www.eazeego.store">EazeeGo Live Store</span> <i class="bi bi-arrow-right"></i></a>
+          <a class="nav-link scrollto"  href="https://www.eazeego.store">Live Store</span> <i class="bi bi-arrow-right"></i> </a>
         </li>
       </ul>
     </div>
@@ -212,14 +212,34 @@
             <h3>Discover a World of Brands and Products</h3>
             <p> Discover a website that offers a wide range of brands and products for you to explore. Begin your shopping journey now and see what interests you!</p>
           </div>
+          <!-- <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="https://www.eazeego.store">Request Demo <i class="bi bi-arrow-right"></i></i></a>
+          </div> -->
           <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="https://www.eazeego.store">Explore Store <i class="bi bi-arrow-right"></i></i></a>
+            <a class="cta-btn align-middle" href="javascript:void(0);" onclick="openWhatsApp()">Request Demo <i class="bi bi-arrow-right"></i></a>
           </div>
         </div>
 
       </div>
     </section><!-- End Cta Section -->
-
+    <script>
+      function openWhatsApp() {
+        // Phone number to send the message to
+        var phoneNumber = "+919449766904";
+        
+        // Message to be sent
+        var message = "Hello! I would like to request a demo. Can you please provide more information?";
+        
+        // Encode message for URL
+        var encodedMessage = encodeURIComponent(message);
+        
+        // WhatsApp API URL
+        var whatsappURL = "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + encodedMessage;
+        
+        // Open WhatsApp in a new tab with pre-filled message
+        window.open(whatsappURL, '_blank');
+      }
+    </script>
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
       <div class="container">

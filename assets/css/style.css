@@ -457,7 +457,9 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: #2a2c39;
+  /* background: #2a2c39; */
+  background: #224694e2 ;
+
   padding: 80px 0;
 }
 
@@ -488,10 +490,10 @@ section {
 }
 
 .cta .cta-btn:hover {
-  background: #fff;
-  color: #ff204e;
+  background: #00bf10;
+  color: #ffffff;
   text-decoration: none;
-  border: #ff0000;
+  /* border: #ff0000; */
 }
 
 @media (max-width: 1024px) {
